@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "simple-identity-webapp"
+    }
+  },
+  "defaultProject": "simple-identity-webapp",
+  "cli": {
+    "analytics": false
+  }
 }
