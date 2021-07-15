@@ -9,7 +9,7 @@ import { SignInComponent } from "./signin.component";
 const signinRouterConfig:Routes=
 [
     {
-        path:'',component:LoginComponent,canActivate:[SignInGuard],
+        path:'',component:SignInComponent,
         children:
         [
             {path:'register',component:RegisterComponent,canActivate:[SignInGuard],canDeactivate:[SignInGuard]},

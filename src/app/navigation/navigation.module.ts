@@ -14,6 +14,7 @@ import { MenuLoginComponent } from './menu-login/menu-login.component';
         HomeComponent,
         FooterComponent,
         MenuLoginComponent,
+        NotFoundComponent
     ],
     imports: [
         CommonModule,

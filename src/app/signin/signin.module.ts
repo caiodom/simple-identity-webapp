@@ -11,7 +11,7 @@ import { SignInComponent } from "./signin.component";
 import { SignInRoutingModule } from "./signin.route";
 import { SignInService } from "./services/signin.service";
 import { SignInGuard } from "./services/signin.guard";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgbModal, NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
     declarations:[
@@ -23,6 +23,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
         CommonModule,
         RouterModule,
         FormsModule,
+        NgbModule,
         ReactiveFormsModule,
         HttpClientModule,
         SignInRoutingModule,

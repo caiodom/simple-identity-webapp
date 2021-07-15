@@ -1,4 +1,4 @@
-<<div class="login-form"> 
+<div class="login-form"> 
     <form novalidate 
             (ngSubmit)="login()"
             [formGroup]="loginForm">
@@ -51,5 +51,5 @@
             <a href="#" class="float-right">Forgot Password?</a>
         </div>-->        
     </form>
-    <p class="text-center"><a href="#">Create an Account</a></p>
-</div>>
+    <p class="text-center"><a [routerLink]="['/register']">Create an Account</a></p>
+</div>

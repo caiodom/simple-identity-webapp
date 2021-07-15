@@ -16,7 +16,7 @@ export class SignInService extends BaseService{
 
     registerUser(user:User):Observable<User>{
         let response=this.http
-                         .post(this.UrlServiceV1+ 'register',user,this.GetJsonHeader())
+                         .post(this.UrlServiceV1+ 'auth/register',user,this.GetJsonHeader())
                          .pipe(
                              map(this.extractData),
                              catchError(this.serviceError)
@@ -26,7 +26,7 @@ export class SignInService extends BaseService{
 
     login(user:User){
         let response=this.http
-                         .post(this.UrlServiceV1 +'login',user,this.GetJsonHeader())
+                         .post(this.UrlServiceV1 +'auth/login',user,this.GetJsonHeader())
                          .pipe(
                              map(this.extractData),
                              catchError(this.serviceError));
